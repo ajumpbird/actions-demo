@@ -1,0 +1,20 @@
+name: 我的第一个 Demo
+
+# 触发条件：当代码被 push 到仓库时
+on: [push]
+
+jobs:
+  # 任务名称：打招呼
+  say-hello:
+    # 运行环境：使用最新版的 Ubuntu (Linux) 虚拟机
+    runs-on: ubuntu-latest
+    
+    # 具体的步骤
+    steps:
+      # 步骤 1：打印一行字
+      - name: 打印 Hello World
+        run: echo "Hello, GitHub Actions! 我成功了！"
+      
+      # 步骤 2：查看一下虚拟机的系统信息
+      - name: 查看系统信息
+        run: uname -a
