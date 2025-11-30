@@ -18,3 +18,6 @@ jobs:
       # 步骤 2：查看一下虚拟机的系统信息
       - name: 查看系统信息
         run: uname -a
+      # 显示当前时间
+      - name: 显示当前时间
+        run: date
